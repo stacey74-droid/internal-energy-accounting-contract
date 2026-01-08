@@ -68,8 +68,7 @@ The 🔗Source also shows the matching algorithm in a flowchart:
 ![flowchart](images/flowchart.png)
 
 | **Algorithm 1: Smart Contract-Based Energy Double Auction Mechanism** |
-| :--- |
-| 
+
 ```
 F1: Constructor
   //Executed at contract deployment
@@ -133,7 +132,7 @@ F10: refundBuyers
     if unsuccessful
       refund committed funds
   end for
-```|
+```
 
 ### 💻Tech stack
 
