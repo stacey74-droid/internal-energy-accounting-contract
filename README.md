@@ -69,7 +69,8 @@ The 🔗Source also shows the matching algorithm in a flowchart:
 
 | **Algorithm 1: Smart Contract-Based Energy Double Auction Mechanism** |
 | :--- |
-| ```
+| 
+```
 F1: Constructor
   //Executed at contract deployment
   //Assigns the address of the contract deployer to a variable “owner”
