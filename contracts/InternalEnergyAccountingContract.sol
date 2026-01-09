@@ -57,7 +57,7 @@ contract InternalEnergyAccountingContract {
 
     // F3: CheckEtherEquiv
     function checkEtherEquiv(uint256 energyPrice) public view returns(uint256){
-        return (energyPrice * 1e18) / etherPrice; 
+        return (energyPrice * 1e18) / etherPrice; //1 ETH = 1,000,000,000,000,000,000 Wei 
     }
 
     // F4: offers
@@ -160,11 +160,10 @@ contract InternalEnergyAccountingContract {
     function refundBuyers() public {
         require(msg.sender == owner, "Only owner authorizes refund");
         for(uint i = 0; i < vBuyerAddr.length; i++){
-            // In a real scenario, you'd calculate actual spent funds. 
-            // Per your algo: refund committed funds if energy demand wasn't met.
             if(vBEBs[i] > 0) {
                  payable(vBuyerAddr[i]).transfer(vFCs[i]);
             }
         }
     }
+
 }
